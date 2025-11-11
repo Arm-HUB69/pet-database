@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Database • Firebase</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <header>
+    <h1>𓃠 PCG Search </h1>
+    <div class="auth-btns">
+      <button id="loginBtn">Login with Google</button>
+      <button id="logoutBtn" style="display:none;">Logout</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 🔍 Search Section -->
+    <section class="search-box">
+      <input id="searchInput" type="text" placeholder="พิมพ์รหัสหรือชื่อแล้วกด Enter..." />
+      </select>
+    </section>
+
+    <!-- Floating Add Button -->
+<button id="fabAdd" class="fab">+</button>
+
+
+
+
+
+    <!-- 📝 Upload Form -->
+    <!-- Modal -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h2>เพิ่ม / แก้ไขข้อมูลสินค้า</h2>
+
+    <form id="uploadForm">
+      <input id="code" type="text" placeholder="รหัสสินค้า" required />
+      <input id="name" type="text" placeholder="ชื่อสินค้า" required />
+      <input id="color" type="text" placeholder="สี" />
+      <input id="shape" type="text" placeholder="รูปร่าง" />
+      <input id="type" type="text" placeholder="ประเภท Remix" />
+      <input id="fileInput" type="file" accept="image/*" />
+      <button type="submit">💾 บันทึกข้อมูล</button>
+    </form>
+
+  </div>
+</div>
+
+
+    <!-- 🖼️ Result Display -->
+    <section id="singleResult"></section>
+
+  </main>
+
+  <footer>
+    <p>Made by Teerapong | Powered by Firebase 🔥</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
